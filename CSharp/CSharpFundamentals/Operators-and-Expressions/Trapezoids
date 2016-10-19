@@ -1,0 +1,19 @@
+using System;
+
+namespace Trapezoid
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double a = double.Parse(Console.ReadLine());
+            double b = double.Parse(Console.ReadLine());
+            double h = double.Parse(Console.ReadLine());
+            double area = ((a + b) * h) / 2;
+            if (area != 0)
+            {
+                Console.WriteLine("{0:0.0000000}", area);
+            }
+        }
+    }
+}
