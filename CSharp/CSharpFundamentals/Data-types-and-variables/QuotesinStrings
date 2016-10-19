@@ -1,0 +1,10 @@
+using System;
+
+class QuotesInString
+{
+    static void Main()
+    {
+        string withoutquo = "The \"use\" of quotations causes difficulties.";
+        Console.WriteLine(withoutquo);
+    }
+}

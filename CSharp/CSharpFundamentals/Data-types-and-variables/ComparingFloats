@@ -1,0 +1,27 @@
+using System;
+
+
+class ComparingFloats
+{
+    static void Main()
+    {
+        double firstNum = new double();
+        double secondNum = new double();
+        double difference = new double();
+        double eps = 0.000001;
+
+        firstNum = double.Parse(Console.ReadLine());
+        secondNum = double.Parse(Console.ReadLine());
+
+        difference = Math.Max(firstNum, secondNum) - Math.Min(firstNum, secondNum);
+
+        if (difference < eps)
+        {
+            Console.WriteLine("true");
+        }
+        else if (difference >= eps)
+        {
+            Console.WriteLine("false");
+        }
+    }
+}

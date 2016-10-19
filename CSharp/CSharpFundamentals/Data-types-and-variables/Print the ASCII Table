@@ -1,0 +1,19 @@
+using System;
+using System.Text;
+
+
+namespace AsciiTable
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            char symbol;
+            for (int i = 33; i < 127; i++)
+            {
+                symbol = (char)i;
+                Console.Write(symbol);
+                }
+            }
+        }
+    }

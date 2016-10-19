@@ -1,0 +1,21 @@
+using System;
+
+namespace N_thBit
+{
+    class NBit
+    {
+        static void Main(string[] args)
+        {
+            long P = long.Parse(Console.ReadLine());
+            byte N = byte.Parse(Console.ReadLine());
+
+            if (N < 55 && P>=0 && P <= Math.Pow(2,55))
+            {
+                long mask = 1 << N;
+                long andMask = P & mask;
+                long bit = andMask >> N;
+                Console.WriteLine(bit);
+            }
+         }
+    }
+}
