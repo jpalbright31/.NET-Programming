@@ -1,0 +1,22 @@
+using System;
+
+
+namespace Divided
+{
+    class Divide7and5
+    {
+        static void Main()
+        {
+            int number = int.Parse(Console.ReadLine());
+            bool boolNumber = (number % 5 == 0) && (number % 7 == 0);
+            if(boolNumber==true)
+            {
+                Console.WriteLine("true {0}",number);
+            }
+            else
+            {
+                Console.WriteLine("false {0}", number);
+            }
+        }
+    }
+}
